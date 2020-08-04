@@ -4,16 +4,111 @@
   <title> 백엔드 개발자 </title>
   <meta charset="utf-8">
   </head>
-    <body>
-     <h1> 백엔드 개발자</h1>
+  <style>
+  a{
+    color: black;
+    text-decoration: none;
+  }
+  body{
+    margin:0;
+  }
+  h1{
+    font-size: 40px;
+    text-align: center;
+    color: green;
+    border-bottom: 1px gray solid;
+    padding-bottom:20px;
+    margin-bottom:0;
+    text-decoration: none;
+  }
+  #grid ol{
+    border-right: 1px gray solid;
+    width: 130px;
+    margin-top:0;
+    padding-top:10px;
+  }
+  #grid{
+    display:grid;
+    grid-template-columns: 180px 1fr;
+  }
+  #article{
+    margin:0;
 
-      <p style="margin-top:45px;">
-      백엔드 개발자는 프론트엔드, 백엔드의 완전한 분리 구조를 지향하는 업무 스타일의
-      개발 방식로서 백엔드의 DB와 API서버 개발을 맡는다. 이와 다른 방식의 업무 스타일
-      직군으로는 웹퍼블리셔(ui개발)와 개발자(서버 개발자)의 업무 분리 방식이 있다.
-       이 경우는 주로 서버사이드가 클라이언트를 감싸는 방식이고,
-       전반적인 비지니스 로직은 개발자가 맡는다.
-       MVC에서 Model, Controller가 백엔드의 소관이다.
-       </p>
+  }
+  #p p{
+    margin-top:50px;
+  }
+  .present{
+  color:red; text-decoration: none;
+  }
+  @media(max-width:800px)
+  {
+    #grid{
+      display:block;
+    }
+    h1{
+      border-bottom:none;
+    }
+    #grid ol{
+      border-right:none;
+      padding-left: 20px;
+    }
+    body{
+      margin:30px;
+    }
+    }
+
+
+  </style>
+    <body>
+     1st page
+     <h1> <a href="index.html">태훈이의 꿈:백엔드 개발자</a></h1>
+     <div id="grid">
+         <ol>
+           <li class="present"> <a href="백엔드 개발자.html" title="백엔드 개발자" class="present"> 백엔드 개발자</a></li>
+           <li> <a href="로맨티스트.html" title="로맨티스트"> 로맨티스트 </a> </li>
+           <li> <a href="건강한 사람.html" title="건강한 사람"> 건강한 사람</a> </li>
+         </ol>
+      <div id="article">
+          <p>
+          백엔드 개발자는 프론트엔드, 백엔드의 완전한 분리 구조를 지향하는 업무 스타일의
+          개발 방식로서 백엔드의 DB와 API서버 개발을 맡는다. 이와 다른 방식의 업무 스타일
+          직군으로는 <strong style="color: gray; font-size: 20px; text-decoration: underline;">웹퍼블리셔(ui개발)와 개발자(서버 개발자)</strong>의 업무 분리 방식이 있다.
+           이 경우는 주로 서버사이드가 클라이언트를 감싸는 방식이고,
+           전반적인 비지니스 로직은 개발자가 맡는다.
+           MVC에서 Model, Controller가 백엔드의 소관이다.
+           </p>
+      <div id="p">
+           <p>
+             <img src="백엔드 개발자.png" width:"100px">
+          </p>
+          <p>
+            <iframe width="739" height="416" src="https://www.youtube.com/embed/ZHSVd1iZ_K0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </p>
+          <p>
+            <div id="disqus_thread"></div>
+            <script>
+
+            /**
+            *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+            *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+            /*
+            var disqus_config = function () {
+            this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
+            */
+            (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://backdeveloper.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+            })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+         </p>
+       </div>
+       </div>
+     </div>
      <body>
   <html>
